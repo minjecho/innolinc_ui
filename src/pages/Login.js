@@ -38,11 +38,11 @@ function Login(){
                 </div>
                 <div class="form-group">
                     <label for="id">ID</label>
-                    <input type="text" class="form-control" id="id" name="id" value={"Minje-Cho"} required />
+                    <input type="text" class="form-control" id="id" name="id" value={"heemoon"} required />
                 </div>
                 <div class="form-group">
                     <label for="pwd">Password</label>
-                    <input type="password" class="form-control" id="pwd" name="pwd" required />
+                    <input type="password" class="form-control" id="pwd" name="pwd" value={"ghkdrma22@@"} required />
                 </div>
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe" />
