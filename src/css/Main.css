@@ -1,0 +1,18 @@
+.navbar-nav .nav-item .nav-link {
+    font-weight: bold; /* 글씨 볼드 적용 */
+    color: #1E3A8A; /* 푸른색 계통(포트리스 색상) */
+}
+
+.navbar-nav .nav-item .nav-link:hover, .navbar-nav .nav-item .nav-link:focus {
+    color: #3B82F6; /* 호버 시 밝은 푸른색 계통 */
+}
+
+.dropdown-menu .dropdown-item {
+    font-weight: bold; /* 드롭다운 글씨 볼드 적용 */
+    color: #1E3A8A; /* 푸른색 계통 */
+}
+
+.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus {
+    color: #3B82F6; /* 드롭다운 항목 호버 시 밝은 푸른색 계통 */
+    background-color: #E0E0E0; /* 호버 시 배경색 */
+}

@@ -2,7 +2,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// CSS
+import '../css/Login.css';
+
 function Login(){
+    const loginStyle = {
+
+    }
+
     return (
         <div class="login-container">
             <h2>Innolinc Login</h2>
