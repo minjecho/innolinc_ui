@@ -1,22 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 // import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 
 // components
-import Login from './components/Login';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Login from './pages/Login';
+import Main from './pages/Main';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <Header /> */}
-        <Login />
-        {/* <Footer /> */}
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/main" element={<Main />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

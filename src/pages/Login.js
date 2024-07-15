@@ -1,5 +1,6 @@
-// Login component
+// Login page
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Login(){
     return (
@@ -26,7 +27,7 @@ function Login(){
                     <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe" />
                     <label class="form-check-label" for="rememberMe">Remember Me</label>
                 </div>
-                <button type="submit" class="btn btn-primary">OK</button>
+                <Link to={"/main"}><button type="submit" class="btn btn-primary">OK</button></Link>
             </form>
         </div>
     )
