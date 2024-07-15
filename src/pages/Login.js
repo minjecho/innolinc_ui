@@ -1,14 +1,28 @@
 // Login page
 import React from "react";
 import { Link } from "react-router-dom";
+import { useEffect } from 'react';
 
 // CSS
 import '../css/Login.css';
 
 function Login(){
-    const loginStyle = {
+    useEffect(() => {
+        const loginJs = document.createElement('script');
+        loginJs.src = 'https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.js';
 
-    }
+        const loginCss = document.createElement('link');
+        loginCss.rel = 'stylesheet';
+        loginCss.href = 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css';
+
+        document.head.appendChild(loginJs);
+        document.head.appendChild(loginCss);
+
+        return () => {
+            document.head.removeChild(loginJs);
+            document.head.removeChild(loginCss);
+        }
+    }, []);
 
     return (
         <div class="login-container">
